@@ -67,6 +67,9 @@ body.light .footer-about h3 {
   color: #222;
 }
 
+body.light #toggle {
+  color: #222;
+}
 
 
 /* CONTACT */
