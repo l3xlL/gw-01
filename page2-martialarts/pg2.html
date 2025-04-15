@@ -10,13 +10,29 @@
 <body>
     
 
-    <nav class="navbar">
-        <div class="logo">GOAL-ORIENTED ACADEMY</div>
-        <ul class="nav-links">
-          <li><a href="#home" onclick="location.reload();">Home</a></li>
-          <li><a href="../page1/pg1.html" class="red1">GOA - Goal Oriented Academy</a></li>
-        </ul>
-    </nav>
+  <nav class="navbar">
+    <div class="logo">GOA - Martial Arts</div>
+  
+    <button class="hamburger" id="hamburger">
+      ☰
+    </button>
+  
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" onclick="location.reload();">Home</a></li>
+      <li><a href="../page1/pg1.html" class="red1">GOA - Goal Oriented Academy</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+  
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  
+  
 
 
 
@@ -44,8 +60,10 @@
         <a href="https://www.facebook.com/nika1keshelava/videos/3502833806690446">
           <img src="./Screenshot 2025-04-11 165633.png" class="vd">
         </a>
-        <h1><strong>გაძლიერდი ჩვენთან ერთად</h1>
-        <p>💪🏻თუ გსურს შენი შვილი გახდეს ძლიერი, ჯანსაღი და დისციპლინირებული<br> ადამიანი, ამ ვიდეოს უყურე ბოლომდე.</p>
+        <h1 class="big"><strong>გაძლიერდი ჩვენთან ერთად</h1>
+          <h1 class="tstt"><strong>გაძლიერდი <br>ჩვენთან ერთად</h1>
+            <p class="tstt1">💪🏻თუ გსურს შენი შვილი გახდეს ძლიერი,<br> ჯანსაღი და დისციპლინირებული<br> ადამიანი, ამ ვიდეოს უყურე ბოლომდე.</p>
+        <p class="big1">💪🏻თუ გსურს შენი შვილი გახდეს ძლიერი, ჯანსაღი და დისციპლინირებული<br> ადამიანი, ამ ვიდეოს უყურე ბოლომდე.</p>
       </div>
 
 
@@ -92,7 +110,7 @@
         <h1>Join us for<br><span class="highlight">an Unforgettable</span><br><span class="tleft">Evening</span></h1>
       </section>
     
-
+      
 
 
 

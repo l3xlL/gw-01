@@ -88,3 +88,10 @@ body {
     background-color: rgb(138, 0, 0);
     color: black;
   }
+
+
+  @media (max-width: 430px) {
+    .thankyou-container {
+      width: 380px;
+    }
+  }

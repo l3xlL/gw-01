@@ -14,15 +14,31 @@
     <!-- DIVIDER: NAVBAR -->
     
 
+
     <nav class="navbar">
-        <div class="logo" onclick="location.reload();">GOAL-ORIENTED ACADEMY</div>
-        <ul class="nav-links">
-          <li><a href="#home" onclick="location.reload();">Home</a></li>
-          <li><a href="../page2-martialarts/pg2.html" class="red1">GOA - Martial arts</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><button id="toggle">Toggle light mode</button></li>
-        </ul>
+      <div class="logo" onclick="location.reload();">GOAL-ORIENTED ACADEMY</div>
+    
+      <button class="hamburger" id="hamburger">
+        ☰
+      </button>
+    
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" onclick="location.reload();">Home</a></li>
+        <li><a href="../page2-martialarts/pg2.html" class="red1">GOA - Martial arts</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="toggle">Toggle</button></li>
+      </ul>
     </nav>
+    
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+    
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    </script>
+    
 
 
 
@@ -72,6 +88,13 @@
         <div class="text-side">
           <h1>Watch one of Our Videos</h1>
           <p><span class="high">Click the image to discover one of our</span><span class="txt-green">most popular videos</span> <span class="high">from</span> <span class="txt-green">Goal Oriented Academy</span><span class="high">. Dive into the world of quality education and see how we empower students to reach their full potential. Don't miss out — watch it now on YouTube!</span></p>
+          <div class="hover-img-container1">
+            <img src="./thumbnail.jpg" alt="base image1" class="base-img1">
+        
+            <a href="https://www.youtube.com/watch?v=APg-_0_K6dc" target="_blank">
+              <img src="./WATCH TRAILER.png" alt="hover image1" class="hover-img1">
+            </a>
+          </div>
         </div>
       </div>
 
