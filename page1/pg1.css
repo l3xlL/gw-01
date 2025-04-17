@@ -12,10 +12,16 @@ html, body {
 }
 
 
+
 body {
     background-color: #1a1a1a;
     transition: all 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+
+
+
+
 
 body.light {
   background-color: rgb(190, 190, 190);
@@ -104,7 +110,7 @@ body.light .contact-form a:hover {
 
 
 
-.navbar {
+/* .navbar {
     background-color: #1a1a1a;
 
     padding: 22px 20px;
@@ -120,9 +126,30 @@ body.light .contact-form a:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.158);
 
     position: sticky;
-    top: 0;
+    top: 1;
     z-index: 1000;
-  }
+
+    overflow: visible;
+  } */
+
+  .navbar {
+    background-color: #1a1a1a;
+    padding: 22px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.158);
+
+    position: sticky;
+    top: 0;  /* Change this to 0 so it sticks to the top */
+    z-index: 1000;
+
+    overflow: visible; /* Ensure this does not cause an issue */
+}
+
 
   .hamburger {
     display: none;
@@ -326,7 +353,14 @@ body.light .contact-form a:hover {
 
 
 
+.remr {
+  display: none;
+}
 
+
+.base-img1 {
+  display: none;
+}
 
 .divider1 {
   height: 300px;
@@ -994,6 +1028,7 @@ body.light .contact-form a:hover {
 
 
 
+
 .footer-about,
 .footer-socials {
   max-width: 30%;
@@ -1356,6 +1391,12 @@ body.light .contact-form a:hover {
   .coursethings-2 {
     margin-top: 100px;
   }
+
+  .card11 {
+    margin-top: 150px;
+  }
+
+
 
 
   /* cards */
