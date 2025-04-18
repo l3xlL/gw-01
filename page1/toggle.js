@@ -1,5 +1,7 @@
-window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('toggle').addEventListener('click', () => {
-      document.body.classList.toggle('light');
-    });
-  });
+window.onload = function () {
+  var button = document.getElementById("toggle");
+
+  button.onclick = function () {
+    document.body.classList.toggle("light");
+  };
+};

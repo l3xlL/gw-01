@@ -40,6 +40,7 @@ body.light .btn2 {
   border: 1px #1a1a1a solid;
   background-color: rgb(190, 190, 190);
 }
+
 /* go queen */
 /* yup!! */
 
@@ -82,6 +83,61 @@ body.light #toggle {
   color: #222;
 }
 
+body.light .section-title {
+  color: #1a1a1a;
+}
+
+body.light .card h3 {
+  color: #020302;
+}
+
+body.light .colorchange {
+  color: #328827;
+}
+
+body.light .colorchange1 {
+  color: #39992c;
+}
+
+body.light .qwe {
+  color: black;
+  font-weight: 420;
+}
+
+body.light .name {
+  color: #328827;
+}
+
+body.light .contact-form label {
+  color:#222;
+}
+
+body.light #contact h1 {
+  color: #222;
+}
+
+body.light #contact a {
+  font-weight: 400;
+  color: #222;
+}
+
+body.light #contact a:hover {
+  background-color: #419c35;
+}
+
+body.light .footer-socials h3 {
+  color: #222;
+}
+
+body.light .social-icons a{
+  color: #544;
+  font-weight: 500;
+}
+
+body.light .social-icons a:hover {
+  color: #001;
+}
+
 
 
 
@@ -110,28 +166,6 @@ body.light .contact-form a:hover {
 
 
 
-/* .navbar {
-    background-color: #1a1a1a;
-
-    padding: 22px 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.158);
-
-    position: sticky;
-    top: 1;
-    z-index: 1000;
-
-    overflow: visible;
-  } */
-
   .navbar {
     background-color: #1a1a1a;
     padding: 22px 20px;
@@ -144,10 +178,10 @@ body.light .contact-form a:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.158);
 
     position: sticky;
-    top: 0;  /* Change this to 0 so it sticks to the top */
+    top: 0;
     z-index: 1000;
 
-    overflow: visible; /* Ensure this does not cause an issue */
+    overflow: visible;
 }
 
 
@@ -1096,22 +1130,7 @@ body.light .contact-form a:hover {
 
 
 @media (max-width: 430px) {
-  /* .logo {
-    font-size: 12px;
-  }
-
-  .nav-links a {
-    font-size: 15px;
-  }
-
-  .nav-links {
-    gap: 25px;
-  }
-
-
-  #toggle {
-    font-size: 15px;
-  } */
+  
 
   .hamburger {
     display: none;
@@ -1157,6 +1176,7 @@ body.light .contact-form a:hover {
     font-size: 16px;
     font-weight: 400;
   }
+
 
 
   /* top-main */
