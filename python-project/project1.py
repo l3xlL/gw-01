@@ -7,9 +7,12 @@ from colorama import Fore, Style, init
 init(autoreset=True)
 
 def print_welcome_message():
+    
+    
     ascii_banner = pyfiglet.figlet_format("Welcome to the Quiz Game!")
     
     print(Fore.MAGENTA + ascii_banner)
+    
 
 print_welcome_message()
 
@@ -20,6 +23,7 @@ print_welcome_message()
 
 
 def quiz():
+    
     print(Fore.GREEN + Style.BRIGHT + "lets get started! the quiz has 4 questions. good luck!")
     print(Fore.YELLOW + "-"*40)
 
@@ -42,17 +46,27 @@ def quiz():
         print(Fore.YELLOW + "-" * len(q["q"]) + "\n")
         for key, val in q["opts"].items():
             print(f"{Fore.MAGENTA}{key}: {val}")
+            
         
         answer = input(Fore.YELLOW + "ur answer (A/B/C/D): ").strip().upper()
+        
+        
 
         if answer == q["ans"]:
             print(Fore.GREEN + "correct!" + Style.BRIGHT)
             score += 1
         else:
             print(Fore.RED + f"wrong. correct answer is {q['ans']}." + Style.NORMAL)
+            
+            
+            
+            
+            
 
     print(Fore.YELLOW + "-"*40)
     print(f"\n{Fore.CYAN}you scored {score}/{len(questions)}.")
+    
+    
 
     if score == len(questions):
         print(Fore.GREEN + "u got all the questions right great job! :)")
@@ -62,5 +76,8 @@ def quiz():
         print(Fore.RED + "u failed.")
 
     print(Fore.YELLOW + "-"*40)
+    
+    
+    
 
 quiz()

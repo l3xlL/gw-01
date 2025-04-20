@@ -5,11 +5,15 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-anchor: none;
 }
+
+
 
 html, body {
   overflow-x: hidden;
 }
+
 
 
 
@@ -868,6 +872,7 @@ body.light .contact-form a:hover {
 
   margin-top: 60px;
   flex-wrap: wrap;
+
 }
 
 .review-card {
@@ -884,7 +889,18 @@ body.light .contact-form a:hover {
   text-align: center;
 
   margin-top: 80px;
+
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
+
+.review-card:hover {
+  transform: scale(1.06);
+
+  box-shadow: 1px 1px 15px rgba(0,0,0,2);
+}
+
+
 
 .stars {
   width: 100px;
@@ -930,6 +946,7 @@ body.light .contact-form a:hover {
   font-size: 14px;
   color: #888;
 }
+
 
 
 
